@@ -17,8 +17,8 @@ public class DeviceHandler {
 
 	private static DeviceHandler instance;
 	
-	
-	@Inject @Named("MovementDetector")
+	/**
+	 * 	@Inject @Named("MovementDetector")
 	private static MovementDetector movementDetector;
 	
 	@Inject @Named("SmartLights")
@@ -32,8 +32,8 @@ public class DeviceHandler {
 	
 	@Inject @Named("SmartOpenCloseDoor")
 	private static SmartOpenCloseDoor smartOpenCloseDoor;
-	
-	 
+	 */
+
 
 
 	private DeviceHandler() {

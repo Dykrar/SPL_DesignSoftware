@@ -19,7 +19,7 @@ public class MostrarMensagem {
 		System.out.println(message);
 	}
 
-	public void showWarning(String message) {
+	public void showEvento(String message) {
 		System.err.println(message);
 	}
 
