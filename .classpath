@@ -28,5 +28,6 @@
 	<classpathentry kind="lib" path="C:/Users/globo/eclipse-workspace2/DSProject/lib/slf4j-api-1.7.21.jar"/>
 	<classpathentry kind="lib" path="C:/Users/globo/eclipse-workspace2/DSProject/lib/sqlite-jdbc-3.7.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/globo/eclipse-workspace2/DSProject/lib/starter-3.0.2-3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
