@@ -14,6 +14,7 @@ public class LampadaInteligente extends RegistaDispositivo {
 	}
 
 	public static void main(String[] args) {
+		
 		LampadaInteligente smartBulbZirk = new LampadaInteligente();
 		System.out.println("Running Smart Bulb Simulator");
         EventSet lightSignalEvents = new EventSet(CoresLuzesEvent.class);

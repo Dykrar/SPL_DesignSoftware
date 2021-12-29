@@ -16,10 +16,7 @@ import zirk.events.DistressButtonEvent;
 import zirk.events.LightSignalEvent;
 import zirk.events.MotionDetectionEvent;
 
-/**
- * @author G16
- *
- */
+
 public class Wearable extends Device{
 
 	public Wearable(Bezirk bezirk) {
