@@ -1,7 +1,10 @@
 package zirk.eventos;
 
 public enum TipoEvento {
-	DISTRESS_BUTTON,
+	SMART_BUTTON,
 	COR_LUZ,
 	DETECAO_MOVIMENTO,
+	OPEN_DOOR,
+	
+	
 }

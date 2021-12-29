@@ -2,16 +2,16 @@ package zirk.devices;
 
 import com.bezirk.middleware.Bezirk;
 
-import devices.DeviceType;
+import dispositivos.TipoProduto;
 
 public abstract class Device {
 
 	protected final Bezirk bezirk;
-	protected final DeviceType deviceType;
+	protected final TipoProduto tipoProduto;
 
-	public Device(Bezirk bezirk, DeviceType deviceType) {
+	public Device(Bezirk bezirk, TipoProduto tipoProduto) {
 		this.bezirk = bezirk;
-		this.deviceType = deviceType;
+		this.tipoProduto = tipoProduto;
 	}
 
 }

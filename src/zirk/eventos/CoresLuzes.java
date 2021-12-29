@@ -1,6 +1,8 @@
+//DELETE 
+
 package zirk.eventos;
 
 public enum CoresLuzes {
 
-	RED, YELLOW, GREEN;
+	VERMELHO, AMARELO, VERDE;
 }

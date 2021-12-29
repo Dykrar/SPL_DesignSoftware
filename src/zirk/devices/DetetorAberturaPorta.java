@@ -1,16 +1,25 @@
 package zirk.devices;
 
+import com.bezirk.middleware.Bezirk;
+import com.bezirk.middleware.addressing.ZirkEndPoint;
+import com.bezirk.middleware.messages.Event;
+import com.bezirk.middleware.messages.EventSet;
+import com.bezirk.middleware.messages.EventSet.EventReceiver;
+
+import dispositivos.TipoProduto;
 import handlers.devices.DeviceHandler;
+import zirk.eventos.DispositivoEvent;
 
 public class DetetorAberturaPorta extends Device{
+	
 	public DetetorAberturaPorta(Bezirk bezirk) {
-		super(bezirk, DeviceType.MOTION_DETECTOR);
+		super(bezirk, TipoProduto.DETETOR_ABERTURA_FECHO_PORTA);
 		final DeviceHandler deviceHandler = DeviceHandler.getInstance();
-		EventSet events = new EventSet(MotionDetectionEvent.class);
+		EventSet events = new EventSet(DetecaoMovimentoEvent.class);
         EventReceiver eventReceiver = new EventSet.EventReceiver() {
             @Override
             public void receiveEvent(Event event, ZirkEndPoint sender) {
-                deviceHandler.handleEvent((DeviceEvent)event, sender);
+                deviceHandler.handleEvent((DispositivoEvent)event, sender);
             }
         };
         events.setEventReceiver(eventReceiver);

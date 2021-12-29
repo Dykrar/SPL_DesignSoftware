@@ -24,18 +24,21 @@ public class Evento {
 	 * @param frequency
 	 * @param frequencyNumber
 	 */
-	public Evento(String name, LocalDateTime startDate, LocalDateTime endDate, Frequency frequency, int frequencyNumber) {
+	public Evento(String name, LocalDateTime startDate, LocalDateTime endDate, Frequency frequency, LocalDateTime advancetime) {
 		this.name = name;
 		this.startDate = startDate;
 		this.endDate = endDate;
 		this.frequency = frequency;
-		this.frequencyNumber = frequencyNumber;
+		this.advancetime = advancetime;
 		Evento w = this;
 		TimerTask start = new TimerTask() {
 			public void run() {
 				w.start();
 			}
 		};
+		
+		// TODO ADVANCE TIME!
+		
 		new Timer().schedule(start, Duration.between(startDate, LocalDateTime.now()).toMillis());
 		TimerTask stop = new TimerTask() {
 			public void run() {

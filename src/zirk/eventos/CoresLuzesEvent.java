@@ -13,18 +13,13 @@ public class CoresLuzesEvent extends DispositivoEvent {
 	
 	private CoresLuzes corLuz;
 
-	/**
-	 * @param eventType
-	 * @param dateTime
-	 */
+	
 	public CoresLuzesEvent(LocalDateTime dateTime, CoresLuzes corLuz) {
 		super(TipoEvento.COR_LUZ, dateTime);
 		this.corLuz = corLuz;
 	}
 
-	/**
-	 * @return the corLuz
-	 */
+
 	public CoresLuzes getCorLuz() {
 		return corLuz;
 	}
