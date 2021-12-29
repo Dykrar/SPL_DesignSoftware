@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature automatic="selected" name="DSProject"/>
+	<feature automatic="selected" name="Connection"/>
+	<feature manual="selected" name="WifiConnection"/>
+	<feature manual="selected" name="InternetConnection"/>
+	<feature automatic="selected" name="Language"/>
+	<feature manual="selected" name="Portuguese"/>
+	<feature automatic="unselected" name="English"/>
+	<feature manual="selected" name="ClientApp"/>
+	<feature automatic="selected" name="Elders"/>
+	<feature automatic="unselected" name="WithoutVisualEmpairment"/>
+	<feature automatic="unselected" name="LightSinals"/>
+	<feature manual="selected" name="VisualEmpairment"/>
+	<feature automatic="selected" name="SynthesizedVoice"/>
+	<feature automatic="selected" name="SendInfo"/>
+	<feature manual="selected" name="SMS"/>
+	<feature automatic="unselected" name="Whatsapp"/>
+	<feature automatic="selected" name="Calendar"/>
+	<feature automatic="selected" name="TurnLightsOnOff"/>
+	<feature automatic="selected" name="MovementDetection"/>
+	<feature manual="selected" name="ButtonClick"/>
+	<feature automatic="selected" name="Alert"/>
+	<feature automatic="selected" name="TimeDefiner"/>
+	<feature automatic="selected" name="DefineTime"/>
+	<feature automatic="selected" name="DefineOpenTime"/>
+	<feature automatic="selected" manual="selected" name="Devices"/>
+	<feature manual="selected" name="SmartLights"/>
+	<feature manual="selected" name="SmartButton"/>
+	<feature manual="selected" name="MovementDetector"/>
+	<feature manual="selected" name="SmartDoorBell"/>
+	<feature manual="selected" name="OpeningSmartDoor"/>
+</configuration>

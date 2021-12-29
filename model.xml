@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="autolayoutconstraints" value="false"/>
+		<graphics key="legendposition" value="1589,49"/>
+		<graphics key="legendautolayout" value="false"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="DSProject">
+			<graphics key="collapsed" value="false"/>
+			<and mandatory="true" name="Connection">
+				<feature name="WifiConnection"/>
+				<feature name="InternetConnection"/>
+			</and>
+			<alt mandatory="true" name="Language">
+				<graphics key="collapsed" value="false"/>
+				<feature name="Portuguese"/>
+				<feature name="English"/>
+			</alt>
+			<feature name="ClientApp"/>
+			<alt name="Elders">
+				<and name="WithoutVisualEmpairment">
+					<feature mandatory="true" name="LightSinals"/>
+				</and>
+				<and name="VisualEmpairment">
+					<graphics key="collapsed" value="false"/>
+					<feature mandatory="true" name="SynthesizedVoice"/>
+				</and>
+			</alt>
+			<alt mandatory="true" name="SendInfo">
+				<feature name="SMS"/>
+				<feature name="Whatsapp"/>
+			</alt>
+			<feature mandatory="true" name="Calendar"/>
+			<and name="TurnLightsOnOff">
+				<graphics key="collapsed" value="false"/>
+				<feature name="MovementDetection"/>
+				<feature name="ButtonClick"/>
+			</and>
+			<feature name="Alert"/>
+			<and name="TimeDefiner">
+				<feature name="DefineTime"/>
+				<feature name="DefineOpenTime"/>
+			</and>
+			<and name="Devices">
+				<feature name="SmartLights"/>
+				<feature name="SmartButton"/>
+				<feature name="MovementDetector"/>
+				<feature name="SmartDoorBell"/>
+				<feature name="OpeningSmartDoor"/>
+			</and>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>SmartButton</var>
+				<conj>
+					<var>Alert</var>
+					<var>SendInfo</var>
+				</conj>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>OpeningSmartDoor</var>
+				<conj>
+					<var>DefineOpenTime</var>
+					<var>Alert</var>
+				</conj>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>MovementDetector</var>
+				<conj>
+					<var>DefineTime</var>
+					<var>SendInfo</var>
+				</conj>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<conj>
+					<var>MovementDetector</var>
+					<var>SmartLights</var>
+				</conj>
+				<var>MovementDetection</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<conj>
+					<var>SmartDoorBell</var>
+					<var>OpeningSmartDoor</var>
+				</conj>
+				<conj>
+					<var>DefineTime</var>
+					<var>SendInfo</var>
+				</conj>
+			</imp>
+		</rule>
+	</constraints>
+</featureModel>
