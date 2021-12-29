@@ -14,17 +14,16 @@ public class DetetorMovimento extends RegistaDispositivo {
 
 	public static void main(String[] args) {
 		DetetorMovimento detetorMovimentoZirk = new DetetorMovimento();
-		System.out.println("Running Motion Detector Simulator");
+		System.out.println("Detetor movimento ativo");
         TimerTask task = new TimerTask() {
             public void run() {
             	String areaDetecao = "Area";
                 LocalDateTime timestamp = LocalDateTime.now();
                 DetetorMovimentoEvent motionDetectionEvent = new DetetorMovimentoEvent(areaDetecao, timestamp);
                 detetorMovimentoZirk.bezirk.sendEvent(motionDetectionEvent);
-                System.err.println("Published Motion Detection event");
+                System.err.println("Enviado evento de detecao de movimento");
             }
         };
         new Timer().scheduleAtFixedRate(task, 0, 5000);
 	}
-
 }

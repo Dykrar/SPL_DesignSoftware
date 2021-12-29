@@ -34,10 +34,7 @@ public class DeviceHandler {
 	private static SmartOpenCloseDoor smartOpenCloseDoor;
 	 */
 
-
-
 	private DeviceHandler() {
-		
 	}
 
 	public static DeviceHandler getInstance() {

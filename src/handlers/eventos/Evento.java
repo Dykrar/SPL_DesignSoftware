@@ -16,7 +16,7 @@ public class Evento {
 	private Frequency frequency;
 	private int frequencyNumber;
 	private Timer timer;
-
+	private LocalDateTime advanceTime;
 	/**
 	 * @param name
 	 * @param startDate
@@ -29,7 +29,7 @@ public class Evento {
 		this.startDate = startDate;
 		this.endDate = endDate;
 		this.frequency = frequency;
-		this.advancetime = advancetime;
+		this.advanceTime = advancetime;
 		Evento w = this;
 		TimerTask start = new TimerTask() {
 			public void run() {

@@ -23,5 +23,4 @@ public class DetecaoMovimentoAlert extends Alert {
     	String message = I18N.getString(Messages.DETECAO_MOVIMENTO_ALERT, defaultMessage, this.location);
     	AlertHandler.getInstance().alert(message);
 	}
-
 }

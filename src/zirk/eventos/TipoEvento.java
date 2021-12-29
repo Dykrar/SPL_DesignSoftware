@@ -5,6 +5,4 @@ public enum TipoEvento {
 	COR_LUZ,
 	DETECAO_MOVIMENTO,
 	OPEN_DOOR,
-	
-	
 }

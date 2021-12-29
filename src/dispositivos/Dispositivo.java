@@ -11,5 +11,4 @@ public abstract class Dispositivo {
 		this.bezirk = bezirk;
 		this.deviceType = deviceType;
 	}
-
 }

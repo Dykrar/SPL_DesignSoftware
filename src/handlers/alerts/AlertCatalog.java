@@ -23,5 +23,4 @@ public class AlertCatalog {
 		this.alerts.remove(alert);
 		return alert;
 	}
-
 }

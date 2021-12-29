@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry excluding="LightSinals.aj|Whatsapp.aj|WithoutVisualEmpairment.aj|English.aj" kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="C:/Users/globo/eclipse-workspace2/DSProject/lib/annotations-12.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/globo/eclipse-workspace2/DSProject/lib/bcprov-jdk15on-1.49.jar"/>
 	<classpathentry kind="lib" path="C:/Users/globo/eclipse-workspace2/DSProject/lib/bezirk-3.0.2-3.jar"/>
@@ -54,6 +54,5 @@
 	<classpathentry kind="lib" path="C:/Users/diogo/Desktop/MaterialApoio (2)/MaterialApoio/IoTExample/lib/sqlite-jdbc-3.7.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/diogo/Desktop/MaterialApoio (2)/MaterialApoio/IoTExample/lib/starter-3.0.2-3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/diogo/Desktop/MaterialApoio (2)/MaterialApoio/BerzikInfo/bezirk-middleware-api/build/libs/bezirk-middleware-api-3.1.0.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

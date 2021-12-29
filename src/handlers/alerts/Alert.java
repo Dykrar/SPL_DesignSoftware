@@ -18,5 +18,4 @@ public abstract class Alert {
 	public AlertType getAlertType() {
 		return alertType;
 	}	
-	
 }
