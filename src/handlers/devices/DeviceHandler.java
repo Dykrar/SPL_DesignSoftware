@@ -3,7 +3,7 @@ package handlers.devices;
 import com.bezirk.middleware.addressing.ZirkEndPoint;
 
 import dispositivos.Dispositivo;
-import eventos.zirk.DispositivoEvent;
+import zirk.eventos.DispositivoEvent;
 /**
  * import zirk.devices.Device;
 import zirk.devices.MotionDetector;
@@ -16,16 +16,24 @@ import zirk.events.DeviceEvent;
 public class DeviceHandler {
 
 	private static DeviceHandler instance;
-	/**
-	 * 	@Inject @Named("MotionDetector")
-	private static MotionDetector motionDetector;
 	
-	@Inject @Named("SmartBulb")
-	private static SmartBulb bulb;
 	
-	@Inject @Named("Wearable")
-	private static Wearable wearable;
-	 */
+	@Inject @Named("MovementDetector")
+	private static MovementDetector movementDetector;
+	
+	@Inject @Named("SmartLights")
+	private static SmartLights smartLights;
+	
+	@Inject @Named("SmartButton")
+	private static SmartButton smartButton;
+	
+	@Inject @Named("SmartDoorBell")
+	private static SmartDoorBell smartDoorOpen;
+	
+	@Inject @Named("SmartOpenCloseDoor")
+	private static SmartOpenCloseDoor smartOpenCloseDoor;
+	
+	 
 
 
 	private DeviceHandler() {

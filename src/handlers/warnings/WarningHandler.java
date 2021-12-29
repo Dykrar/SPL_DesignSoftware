@@ -1,6 +1,6 @@
 package handlers.warnings;
 
-import eventos.zirk.MostrarMensagem;
+import zirk.eventos.MostrarMensagem;
 
 public class WarningHandler {
 

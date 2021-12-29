@@ -1,4 +1,4 @@
-package eventos.zirk;
+package zirk.eventos;
 
 public enum TipoEvento {
 	DISTRESS_BUTTON,

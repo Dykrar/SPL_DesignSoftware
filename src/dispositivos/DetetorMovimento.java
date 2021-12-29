@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import eventos.zirk.DetetorMovimentoEvent;
+import zirk.eventos.DetetorMovimentoEvent;
 
 public class DetetorMovimento extends RegistaDispositivo {
 
@@ -13,14 +13,14 @@ public class DetetorMovimento extends RegistaDispositivo {
 	}
 
 	public static void main(String[] args) {
-		DetetorMovimento motionDetectorZirk = new DetetorMovimento();
+		DetetorMovimento detetorMovimentoZirk = new DetetorMovimento();
 		System.out.println("Running Motion Detector Simulator");
         TimerTask task = new TimerTask() {
             public void run() {
             	String areaDetecao = "Area";
                 LocalDateTime timestamp = LocalDateTime.now();
                 DetetorMovimentoEvent motionDetectionEvent = new DetetorMovimentoEvent(areaDetecao, timestamp);
-                motionDetectorZirk.bezirk.sendEvent(motionDetectionEvent);
+                detetorMovimentoZirk.bezirk.sendEvent(motionDetectionEvent);
                 System.err.println("Published Motion Detection event");
             }
         };

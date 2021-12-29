@@ -1,7 +1,7 @@
 /**
  * 
  */
-package eventos.zirk;
+package zirk.eventos;
 
 import java.time.LocalDateTime;
 
