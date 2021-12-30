@@ -1,4 +1,4 @@
 
-public aspect LightSinals {
+public aspect DefineTime {
 	// TODO Auto-generated aspect
 }

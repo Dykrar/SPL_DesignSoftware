@@ -1,7 +1,3 @@
-package aj.files;
-
-
-
 import com.bezirk.middleware.addressing.ZirkEndPoint;
 
 import eventos.bezirk.DispositivoEvent;

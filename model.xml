@@ -19,14 +19,14 @@
 			</and>
 			<alt mandatory="true" name="Language">
 				<graphics key="collapsed" value="false"/>
-				<feature name="Portuguese"/>
 				<feature name="English"/>
+				<feature name="Portuguese"/>
 			</alt>
 			<feature name="ClientApp"/>
 			<alt name="VisualEmpairment">
 				<graphics key="collapsed" value="false"/>
 				<and name="WithoutVisualEmpairment">
-					<feature mandatory="true" name="LightSinals"/>
+					<feature mandatory="true" name="SoundSinals"/>
 				</and>
 				<and name="WithVisualEmpairment">
 					<graphics key="collapsed" value="false"/>

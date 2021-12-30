@@ -1,5 +1,3 @@
-package aj.files;
-
 import com.bezirk.middleware.addressing.ZirkEndPoint;
 
 import handlers.alerts.AlertHandler;

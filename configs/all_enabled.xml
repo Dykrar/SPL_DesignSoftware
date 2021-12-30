@@ -5,21 +5,21 @@
 	<feature manual="selected" name="WifiConnection"/>
 	<feature manual="selected" name="InternetConnection"/>
 	<feature automatic="selected" name="Language"/>
-	<feature manual="selected" name="Portuguese"/>
 	<feature automatic="unselected" name="English"/>
+	<feature manual="selected" name="Portuguese"/>
 	<feature manual="selected" name="ClientApp"/>
 	<feature automatic="selected" name="VisualEmpairment"/>
 	<feature automatic="unselected" name="WithoutVisualEmpairment"/>
-	<feature automatic="unselected" name="LightSinals"/>
+	<feature automatic="unselected" name="SoundSinals"/>
 	<feature automatic="selected" name="WithVisualEmpairment"/>
-	<feature automatic="selected" name="SynthesizedVoice"/>
+	<feature manual="selected" name="SynthesizedVoice"/>
 	<feature automatic="selected" name="SendInfo"/>
 	<feature manual="selected" name="SMS"/>
 	<feature automatic="unselected" name="Whatsapp"/>
 	<feature automatic="selected" name="Calendar"/>
 	<feature automatic="selected" name="TurnLightsOnOff"/>
 	<feature automatic="selected" name="MovementDetection"/>
-	<feature manual="selected" name="ButtonClick"/>
+	<feature automatic="selected" manual="selected" name="ButtonClick"/>
 	<feature automatic="selected" name="Alert"/>
 	<feature automatic="selected" name="TimeDefiner"/>
 	<feature automatic="selected" name="DefineTime"/>
