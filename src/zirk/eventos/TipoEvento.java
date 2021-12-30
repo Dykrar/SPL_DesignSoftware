@@ -5,5 +5,5 @@ public enum TipoEvento {
 	LUZ,
 	MOVEMENT_DETECTION,
 	OPEN_DOOR,
-	ALERT_BUTTON,
+	
 }

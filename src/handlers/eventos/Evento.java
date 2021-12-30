@@ -16,7 +16,7 @@ public class Evento {
 	private Frequency frequency;
 	private int frequencyNumber;
 	private Timer timer;
-	private LocalDateTime advanceTime;
+	private LocalDateTime advanceTime;//NOT USED !!!!
 	/**
 	 * @param name
 	 * @param startDate
