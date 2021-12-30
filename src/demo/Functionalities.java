@@ -1,4 +1,4 @@
-package controllers;
+package demo;
 
 import static i18n.Messages.*;
 

@@ -1,10 +1,10 @@
-package controllers;
+package demo;
 
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-import controllers.InputController;
+import demo.InputController;
 
 public class UI {
 

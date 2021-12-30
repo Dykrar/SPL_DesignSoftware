@@ -1,4 +1,4 @@
-package controllers;
+package demo;
 
 import i18n.I18N;
 
