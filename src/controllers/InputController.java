@@ -9,10 +9,10 @@ import java.util.Scanner;
 
 import com.bezirk.middleware.Bezirk;
 
-import dispositivos.bezirk.BotaoInteligente;
-import dispositivos.bezirk.CampainhaInteligente;
-import dispositivos.bezirk.DetetorMovimento;
-import dispositivos.bezirk.LampadaInteligente;
+import dispositivos.BotaoInteligente;
+import dispositivos.CampainhaInteligente;
+import dispositivos.DetetorMovimento;
+import dispositivos.LampadaInteligente;
 
 
 public class InputController {
@@ -82,7 +82,7 @@ public class InputController {
     public void executeProduct(String [] list_func) throws ParseException {
     	
       	
-      	OutputController co = new OutputController(I18N.getString(FUNCIONALIDADES_MSG));
+		OutputController co = new OutputController(I18N.getString(FUNCIONALIDADES_MSG));
     	co.sendMessage();
       	
       	for (int i=0; i<list_func.length; i++) {
@@ -101,25 +101,25 @@ public class InputController {
       		switch(string) {
       			case "Tocar a Campainha":
       			case "Ring the bell":
-      				new CampainhaInteligente(null);
+      				new CampainhaInteligente();
       			break;
 	      		case "Enviar Alerta com botao":
 	      		case "Send Emergency Alert with button":
-	      			new BotaoInteligente(null);
+	      			new BotaoInteligente();
 	      			break;
 	      		case "Enviar Alerta Baseando no movimento":
 	      		case "Send Alert Based on activity":
-	      			new DetetorMovimento(null);
+	      			new DetetorMovimento();
 	      			break;
 	      		case "Ligar a Luz automaticamente":
 	      		case "Turn on lamp automatically":
-	      			new LampadaInteligente(null);
+	      			new LampadaInteligente();
 	      			break;
 	      		case "exit":
 	      		case "sair":
 	      			System.exit(0);
 	      		default:
-	      			co.setMessage(I18N.getString(DEFAULT));
+	      			co.setMessage(I18N.getString(CLOSING));
 	      			co.sendMessage();
       		}
       	}  	

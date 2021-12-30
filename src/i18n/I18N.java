@@ -16,20 +16,20 @@ public class I18N {
 	private String getString(Messages key) {
 		return bundle.getString(key.toString());
 	}
-	
-	/***  SINGLETON ***/
-	
+
+	/*** SINGLETON ***/
+
 	private static I18N instance;
 
 	public static void setInstance(I18N i18n) {
-		 instance = i18n;
+		instance = i18n;
 	}
-	
+
 	public static I18N getInstance() {
 		return instance;
 	}
 
-	/***  SERVICES  ***/
+	/*** SERVICES ***/
 
 	public static String getString(Messages key, String... args) {
 		return MessageFormat.format(instance.getString(key), (Object[]) args);
