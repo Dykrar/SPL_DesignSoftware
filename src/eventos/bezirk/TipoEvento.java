@@ -6,5 +6,4 @@ public enum TipoEvento {
 	MOVEMENT_DETECTION,
 	OPEN_DOOR,
 	DOOR_BELL,
-	
 }
