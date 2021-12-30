@@ -8,6 +8,12 @@ import eventos.bezirk.DispositivoEvent;
 import handlers.alerts.AlertHandler;
 import i18n.I18N;
 import i18n.Messages;
+<<<<<<< HEAD
+=======
+import handlers.devices.DeviceHandler;
+import zirk.eventos.CampainhaEvent;
+import zirk.eventos.DispositivoEvent;
+>>>>>>> branch 'main' of https://github.com/Dykrar/SPL_DesignSoftware.git
 
 public aspect SmartDoorBell {
 	

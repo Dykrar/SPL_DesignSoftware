@@ -23,11 +23,12 @@
 				<feature name="English"/>
 			</alt>
 			<feature name="ClientApp"/>
-			<alt name="Elders">
+			<alt name="VisualEmpairment">
+				<graphics key="collapsed" value="false"/>
 				<and name="WithoutVisualEmpairment">
 					<feature mandatory="true" name="LightSinals"/>
 				</and>
-				<and name="VisualEmpairment">
+				<and name="WithVisualEmpairment">
 					<graphics key="collapsed" value="false"/>
 					<feature mandatory="true" name="SynthesizedVoice"/>
 				</and>
