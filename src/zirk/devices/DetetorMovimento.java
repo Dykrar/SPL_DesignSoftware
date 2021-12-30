@@ -12,7 +12,7 @@ import zirk.eventos.DispositivoEvent;
 import zirk.eventos.DetetorMovimentoEvent;
 
 
-public class DetetorMovimento extends Device {
+public class DetetorMovimento extends Dispositivo {
 
 	public DetetorMovimento(Bezirk bezirk) {
 		super(bezirk, TipoProduto.DETETOR_MOVIMENTO);

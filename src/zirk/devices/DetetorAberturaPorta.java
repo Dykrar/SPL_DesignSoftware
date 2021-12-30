@@ -8,6 +8,7 @@ import com.bezirk.middleware.messages.EventSet.EventReceiver;
 
 import dispositivos.TipoProduto;
 import handlers.devices.DeviceHandler;
+import zirk.eventos.DetetorAberturaPortaEvent;
 import zirk.eventos.DispositivoEvent;
 
 public class DetetorAberturaPorta extends Dispositivo {
@@ -15,7 +16,7 @@ public class DetetorAberturaPorta extends Dispositivo {
 	public DetetorAberturaPorta(Bezirk bezirk) {
 		super(bezirk, TipoProduto.DETETOR_ABERTURA_FECHO_PORTA);
 		final DeviceHandler deviceHandler = DeviceHandler.getInstance();
-		EventSet events = new EventSet(DetetorAberturaPortaEvent.class);
+		EventSet events = new EventSet(DetetorAberturaPortaEvent.class);//DetetorAberturaPortaEvent nao funciona
         EventReceiver eventReceiver = new EventSet.EventReceiver() {
             @Override
             public void receiveEvent(Event event, ZirkEndPoint sender) {

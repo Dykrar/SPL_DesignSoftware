@@ -13,7 +13,7 @@ public aspect MovementDetector {
 
 	void around(DispositivoEvent event, ZirkEndPoint sender): movementDetectionEventDetected(event, sender) {
         if (event instanceof DetetorMovimentoEvent) {
-        	AlertHandler.getInstance().handleMotionDetection((DetetorMovimentoEvent)event);
+        	AlertHandler.getInstance().handleDetecaoMovimento((DetetorMovimentoEvent)event);
         }
 	}
 }

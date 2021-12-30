@@ -2,7 +2,9 @@ package zirk.eventos;
 
 import java.time.LocalDateTime;
 
-public class DetetorAberturaPortaEvent {
+import zirk.devices.Dispositivo;
+
+public class DetetorAberturaPortaEvent {//Needs Extend
 
 	private final int tempoAberta;
 

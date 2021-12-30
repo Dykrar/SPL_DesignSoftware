@@ -1,7 +1,15 @@
 package zirk.devices;
 
+import com.bezirk.middleware.Bezirk;
+import com.bezirk.middleware.addressing.ZirkEndPoint;
+import com.bezirk.middleware.messages.Event;
+import com.bezirk.middleware.messages.EventSet;
+import com.bezirk.middleware.messages.EventSet.EventReceiver;
+
 import dispositivos.TipoProduto;
 import handlers.devices.DeviceHandler;
+import zirk.eventos.DispositivoEvent;
+import zirk.eventos.LuzEvent;
 
 public class LampadaInteligente extends Dispositivo {
 
@@ -12,7 +20,7 @@ public class LampadaInteligente extends Dispositivo {
         EventReceiver eventReceiver = new EventSet.EventReceiver() {
             @Override
             public void receiveEvent(Event event, ZirkEndPoint sender) {
-                deviceHandler.handleEvent((DeviceEvent)event, sender);
+                deviceHandler.handleEvent((DispositivoEvent)event, sender);
             }
         };
         events.setEventReceiver(eventReceiver);
