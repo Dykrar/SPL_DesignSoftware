@@ -2,8 +2,10 @@ package zirk.eventos;
 
 import java.time.LocalDateTime;
 
-public class DetetorAberturaPortaEvent {
+public class DetetorAberturaPortaEvent extends DispositivoEvent {
 
+	//isto serve para???
+	private static final long serialVersionUID = 1L;
 	private final int tempoAberta;
 
 	public DetetorAberturaPortaEvent(int tempoAberta, LocalDateTime timestamp) {

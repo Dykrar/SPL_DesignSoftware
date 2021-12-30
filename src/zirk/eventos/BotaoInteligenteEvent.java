@@ -2,7 +2,7 @@ package zirk.eventos;
 
 import java.time.LocalDateTime;
 
-public class AlertButtonEvent extends DispositivoEvent {
+public class BotaoInteligenteEvent extends DispositivoEvent {
 
 	private static final long serialVersionUID = 1L;
 
@@ -10,8 +10,8 @@ public class AlertButtonEvent extends DispositivoEvent {
 	 * @param eventType
 	 * @param dateTime
 	 */
-	public AlertButtonEvent(LocalDateTime timeStamp) {
-		super(TipoEvento.ALERT_BUTTON, timeStamp);
+	public BotaoInteligenteEvent(LocalDateTime timeStamp) {
+		super(TipoEvento.SMART_BUTTON, timeStamp);
 	}
 
 	
