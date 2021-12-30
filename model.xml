@@ -105,5 +105,14 @@
 				</conj>
 			</imp>
 		</rule>
+		<rule>
+			<imp>
+				<conj>
+					<var>SmartButton</var>
+					<var>SmartLights</var>
+				</conj>
+				<var>ButtonClick</var>
+			</imp>
+		</rule>
 	</constraints>
 </featureModel>

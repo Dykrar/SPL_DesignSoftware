@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 
  public class DetetorAberturaPortaEvent extends DispositivoEvent {
 
-	//isto serve para???
+
 	private static final long serialVersionUID = 1L;
 	private final int tempoAberta;
 
