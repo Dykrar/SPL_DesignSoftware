@@ -1,8 +1,8 @@
 package handlers.alerts;
 
+import eventos.bezirk.DetetorMovimentoEvent;
+import eventos.bezirk.MostrarMensagem;
 import handlers.contacts.ContactHandler;
-import zirk.eventos.DetetorMovimentoEvent;
-import zirk.eventos.MostrarMensagem;
 
 public class AlertHandler {
 

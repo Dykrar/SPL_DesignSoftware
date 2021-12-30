@@ -1,4 +1,4 @@
-package zirk.devices;
+package dispositivos.bezirk;
 
 import com.bezirk.middleware.Bezirk;
 

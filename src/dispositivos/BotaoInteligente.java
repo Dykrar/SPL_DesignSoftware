@@ -5,7 +5,7 @@ import com.bezirk.middleware.messages.Event;
 import com.bezirk.middleware.messages.EventSet;
 import com.bezirk.middleware.messages.EventSet.EventReceiver;
 
-import zirk.eventos.BotaoInteligenteEvent;
+import eventos.bezirk.BotaoInteligenteEvent;
 
 public class BotaoInteligente extends RegistaDispositivo {
 

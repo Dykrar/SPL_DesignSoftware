@@ -1,4 +1,4 @@
-package zirk.eventos;
+package eventos.bezirk;
 
 public class MostrarMensagem {
 

@@ -4,11 +4,11 @@ package aj.files;
 
 import com.bezirk.middleware.addressing.ZirkEndPoint;
 
+import eventos.bezirk.DispositivoEvent;
 import handlers.alerts.AlertHandler;
 import i18n.I18N;
 import i18n.Messages;
-import zirk.eventos.DispositivoEvent;
-import zirk.eventos.BotaoInteligenteEvent;//Classe foi eliminada
+import eventos.bezirk.BotaoInteligenteEvent;//Classe foi eliminada
 import handlers.devices.DeviceHandler;
 
 

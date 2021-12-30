@@ -2,8 +2,8 @@ package handlers.devices;
 
 import com.bezirk.middleware.addressing.ZirkEndPoint;
 
-import zirk.devices.Dispositivo;
-import zirk.eventos.DispositivoEvent;
+import dispositivos.bezirk.Dispositivo;
+import eventos.bezirk.DispositivoEvent;
 /**
  * import zirk.devices.Device;
 import zirk.devices.MotionDetector;

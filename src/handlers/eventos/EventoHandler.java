@@ -1,6 +1,6 @@
 package handlers.eventos;
 
-import zirk.eventos.MostrarMensagem;
+import eventos.bezirk.MostrarMensagem;
 
 public class EventoHandler {
 

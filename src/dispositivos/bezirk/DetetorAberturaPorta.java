@@ -1,4 +1,4 @@
-package zirk.devices;
+package dispositivos.bezirk;
 
 import com.bezirk.middleware.Bezirk;
 import com.bezirk.middleware.addressing.ZirkEndPoint;
@@ -7,16 +7,16 @@ import com.bezirk.middleware.messages.EventSet;
 import com.bezirk.middleware.messages.EventSet.EventReceiver;
 
 import dispositivos.TipoProduto;
+import eventos.bezirk.DetetorAberturaPortaEvent;
+import eventos.bezirk.DispositivoEvent;
 import handlers.devices.DeviceHandler;
-import zirk.eventos.DetetorMovimentoEvent;
-import zirk.eventos.DispositivoEvent;
 
-public class BotaoInteligente extends Dispositivo {
+public class DetetorAberturaPorta extends Dispositivo {
 	
-	public BotaoInteligente(Bezirk bezirk) {
-		super(bezirk, TipoProduto.BOTAO_INTELIGENTE);
+	public DetetorAberturaPorta(Bezirk bezirk) {
+		super(bezirk, TipoProduto.DETETOR_ABERTURA_FECHO_PORTA);
 		final DeviceHandler deviceHandler = DeviceHandler.getInstance();
-		EventSet events = new EventSet(DetetorMovimentoEvent.class);
+		EventSet events = new EventSet(DetetorAberturaPortaEvent.class);//DetetorAberturaPortaEvent nao funciona
         EventReceiver eventReceiver = new EventSet.EventReceiver() {
             @Override
             public void receiveEvent(Event event, ZirkEndPoint sender) {
@@ -26,4 +26,5 @@ public class BotaoInteligente extends Dispositivo {
         events.setEventReceiver(eventReceiver);
         this.bezirk.subscribe(events);
 	}
+	
 }

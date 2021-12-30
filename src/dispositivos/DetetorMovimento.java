@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import zirk.eventos.DetetorMovimentoEvent;
+import eventos.bezirk.DetetorMovimentoEvent;
 
 public class DetetorMovimento extends RegistaDispositivo {
 

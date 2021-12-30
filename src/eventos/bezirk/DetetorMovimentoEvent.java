@@ -1,4 +1,4 @@
-package zirk.eventos;
+package eventos.bezirk;
 
 import java.time.LocalDateTime;
 

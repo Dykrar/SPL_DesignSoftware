@@ -5,7 +5,7 @@ import com.bezirk.middleware.messages.Event;
 import com.bezirk.middleware.messages.EventSet;
 import com.bezirk.middleware.messages.EventSet.EventReceiver;
 
-import zirk.eventos.LuzEvent;
+import eventos.bezirk.LuzEvent;
 
 public class LampadaInteligente extends RegistaDispositivo {
 

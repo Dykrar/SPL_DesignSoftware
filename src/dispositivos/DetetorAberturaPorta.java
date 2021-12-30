@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import zirk.eventos.DetetorAberturaPortaEvent;
+import eventos.bezirk.DetetorAberturaPortaEvent;
 
 public class DetetorAberturaPorta extends RegistaDispositivo {
 	
@@ -13,7 +13,6 @@ public class DetetorAberturaPorta extends RegistaDispositivo {
 	}
 	
 	public static void main(String[] args) {
-		//diz unnused n sei pq
 		DetetorAberturaPorta detetorAberturaPortaBezirk = new DetetorAberturaPorta();
 		System.out.println("Detetor abertura porta ativo");
         TimerTask task = new TimerTask() {

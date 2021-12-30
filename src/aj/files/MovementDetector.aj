@@ -2,10 +2,11 @@ package aj.files;
 
 
 import com.bezirk.middleware.addressing.ZirkEndPoint;
+
+import eventos.bezirk.DetetorMovimentoEvent;
+import eventos.bezirk.DispositivoEvent;
 import handlers.devices.DeviceHandler;
 import handlers.alerts.AlertHandler;
-import zirk.eventos.DispositivoEvent;
-import zirk.eventos.DetetorMovimentoEvent;
 
 public aspect MovementDetector {
 	
