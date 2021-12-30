@@ -19,7 +19,7 @@ public class DetecaoMovimentoAlert extends Alert {
 	}
 
 	public void alert() {
-		String defaultMessage = "Motion Detection Alert! {0}";
+		String defaultMessage = "Detecao Movimento Alert!";
     	String message = I18N.getString(Messages.DETECAO_MOVIMENTO_ALERT, defaultMessage, this.location);
     	AlertHandler.getInstance().alert(message);
 	}

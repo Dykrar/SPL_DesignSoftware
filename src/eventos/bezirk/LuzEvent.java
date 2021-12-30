@@ -9,4 +9,5 @@ public class LuzEvent extends DispositivoEvent {
 	public LuzEvent(LocalDateTime dateTime) {
 		super(TipoEvento.LUZ, dateTime);
 	}
+
 }

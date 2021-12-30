@@ -2,7 +2,6 @@ package handlers.alerts;
 
 import eventos.bezirk.DetetorMovimentoEvent;
 import eventos.bezirk.MostrarMensagem;
-import handlers.contacts.ContactHandler;
 
 public class AlertHandler {
 
@@ -26,7 +25,6 @@ public class AlertHandler {
 
 	public void alert(String message) {
 		MostrarMensagem.getInstance().showAlert(message);
-		ContactHandler.getInstance().sendEmergencySMS(message);
 	}
 
 	public void handleDetecaoMovimento(DetetorMovimentoEvent event) {
@@ -34,9 +32,6 @@ public class AlertHandler {
 			if (alert instanceof DetecaoMovimentoAlert) {
 				((DetecaoMovimentoAlert) alert).alert();
 			}
-			/*if (alert instanceof InatividadeAlert) { 
-				((InatividadeAlert) alert).cancel();
-			} *///Classe InatividadeAlert foi eliminada
 		}
 	}
 }
