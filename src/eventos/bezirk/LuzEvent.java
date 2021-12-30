@@ -9,4 +9,9 @@ public class LuzEvent extends DispositivoEvent {
 	public LuzEvent(LocalDateTime dateTime) {
 		super(TipoEvento.LUZ, dateTime);
 	}
+
+	public Object getLightSignal() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
