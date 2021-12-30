@@ -30,5 +30,4 @@ public class LampadaInteligente extends RegistaDispositivo {
         lampadaInteligenteBezirk.bezirk.subscribe(luzEvents);
         System.out.println("Subscrito aos eventos da luz inteligente");
 	}
-
 }
