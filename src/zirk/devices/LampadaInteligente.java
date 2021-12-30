@@ -1,13 +1,14 @@
 package zirk.devices;
 
+import dispositivos.TipoProduto;
 import handlers.devices.DeviceHandler;
 
-public class LampedaInteligente extends Device {
+public class LampadaInteligente extends Dispositivo {
 
-	public DetetorAberturaPorta(Bezirk bezirk) {
-		super(bezirk, DeviceType.MOTION_DETECTOR);
+	public LampadaInteligente(Bezirk bezirk) {
+		super(bezirk, TipoProduto.LAMPADA_INTELIGENTE);
 		final DeviceHandler deviceHandler = DeviceHandler.getInstance();
-		EventSet events = new EventSet(MotionDetectionEvent.class);
+		EventSet events = new EventSet(LuzEvent.class);
         EventReceiver eventReceiver = new EventSet.EventReceiver() {
             @Override
             public void receiveEvent(Event event, ZirkEndPoint sender) {

@@ -17,7 +17,7 @@ public class DetetorMovimento extends Device {
 	public DetetorMovimento(Bezirk bezirk) {
 		super(bezirk, TipoProduto.DETETOR_MOVIMENTO);
 		final DeviceHandler deviceHandler = DeviceHandler.getInstance();
-		EventSet events = new EventSet(DetecaoMovimentoEvent.class);
+		EventSet events = new EventSet(DetetorMovimentoEvent.class);
         EventReceiver eventReceiver = new EventSet.EventReceiver() {
             @Override
             public void receiveEvent(Event event, ZirkEndPoint sender) {

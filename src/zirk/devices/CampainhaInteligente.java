@@ -1,11 +1,12 @@
 package zirk.devices;
 
+import dispositivos.TipoProduto;
 import handlers.devices.DeviceHandler;
 
 public class CampainhaInteligente extends Device {
 
 	public CampainhaInteligente(Bezirk bezirk) {
-		super(bezirk, DeviceType.MOTION_DETECTOR);
+		super(bezirk, TipoProduto.CAMPAINHA_PORTA_INTELIGENTE);
 		final DeviceHandler deviceHandler = DeviceHandler.getInstance();
 		EventSet events = new EventSet(MotionDetectionEvent.class);
         EventReceiver eventReceiver = new EventSet.EventReceiver() {

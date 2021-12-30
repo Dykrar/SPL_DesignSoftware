@@ -26,7 +26,4 @@ public abstract class DispositivoEvent extends Event {
 	public TipoEvento getEventType() {
 		return eventType;
 	}
-	
-	
-
 }

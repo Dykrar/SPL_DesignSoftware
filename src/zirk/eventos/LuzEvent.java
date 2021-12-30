@@ -1,0 +1,12 @@
+package zirk.eventos;
+
+import java.time.LocalDateTime;
+
+public class LuzEvent extends DispositivoEvent {
+	
+	private static final long serialVersionUID = 1L;
+
+	public LuzEvent(LocalDateTime dateTime) {
+		super(TipoEvento.LUZ, dateTime);
+	}
+}

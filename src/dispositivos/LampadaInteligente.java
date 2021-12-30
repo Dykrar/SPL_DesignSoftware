@@ -5,7 +5,7 @@ import com.bezirk.middleware.messages.Event;
 import com.bezirk.middleware.messages.EventSet;
 import com.bezirk.middleware.messages.EventSet.EventReceiver;
 
-import zirk.eventos.CoresLuzesEvent;
+import zirk.eventos.LuzEvent;
 
 public class LampadaInteligente extends RegistaDispositivo {
 
@@ -15,19 +15,19 @@ public class LampadaInteligente extends RegistaDispositivo {
 
 	public static void main(String[] args) {
 		
-		LampadaInteligente smartBulbZirk = new LampadaInteligente();
+		LampadaInteligente lampadaInteligenteBezirk = new LampadaInteligente();
 		System.out.println("Lampada inteligente ativa");
-        EventSet lightSignalEvents = new EventSet(CoresLuzesEvent.class);
+        EventSet luzEvents = new EventSet(LuzEvent.class);
         EventReceiver eventReceiver = new EventSet.EventReceiver() {
             @Override
             public void receiveEvent(Event event, ZirkEndPoint sender) {
-                if (event instanceof CoresLuzesEvent) {
+                if (event instanceof LuzEvent) {
                 	System.out.println("Recebido o evento da cor da luz");
                 }
             }
         };
-        lightSignalEvents.setEventReceiver(eventReceiver);
-        smartBulbZirk.bezirk.subscribe(lightSignalEvents);
+        luzEvents.setEventReceiver(eventReceiver);
+        lampadaInteligenteBezirk.bezirk.subscribe(luzEvents);
         System.out.println("Subscrito aos eventos da luz inteligente");
 	}
 

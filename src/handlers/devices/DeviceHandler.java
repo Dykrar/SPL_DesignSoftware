@@ -2,7 +2,7 @@ package handlers.devices;
 
 import com.bezirk.middleware.addressing.ZirkEndPoint;
 
-import dispositivos.Dispositivo;
+import zirk.devices.Dispositivo;
 import zirk.eventos.DispositivoEvent;
 /**
  * import zirk.devices.Device;

@@ -8,9 +8,8 @@ public class DetetorMovimentoEvent extends DispositivoEvent {
 	private static final long serialVersionUID = 1L;
 	private final String areaDetecao;
 
-
 	public DetetorMovimentoEvent(String areaDetecao, LocalDateTime timestamp) {
-		super(TipoEvento.DETECAO_MOVIMENTO, timestamp);
+		super(TipoEvento.MOVEMENT_DETECTION, timestamp);
 		this.areaDetecao = areaDetecao;
 	}
 

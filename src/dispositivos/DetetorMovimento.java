@@ -13,14 +13,14 @@ public class DetetorMovimento extends RegistaDispositivo {
 	}
 
 	public static void main(String[] args) {
-		DetetorMovimento detetorMovimentoZirk = new DetetorMovimento();
+		DetetorMovimento detetorMovimentoBezirk = new DetetorMovimento();
 		System.out.println("Detetor movimento ativo");
         TimerTask task = new TimerTask() {
             public void run() {
             	String areaDetecao = "Area";
                 LocalDateTime timestamp = LocalDateTime.now();
-                DetetorMovimentoEvent motionDetectionEvent = new DetetorMovimentoEvent(areaDetecao, timestamp);
-                detetorMovimentoZirk.bezirk.sendEvent(motionDetectionEvent);
+                DetetorMovimentoEvent DetetorMovimentoEvent = new DetetorMovimentoEvent(areaDetecao, timestamp);
+                detetorMovimentoBezirk.bezirk.sendEvent(DetetorMovimentoEvent);
                 System.err.println("Enviado evento de detecao de movimento");
             }
         };

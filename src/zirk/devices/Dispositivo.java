@@ -1,6 +1,8 @@
-package dispositivos;
+package zirk.devices;
 
 import com.bezirk.middleware.Bezirk;
+
+import dispositivos.TipoProduto;
 
 public abstract class Dispositivo {
 

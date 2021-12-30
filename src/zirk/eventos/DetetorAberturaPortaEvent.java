@@ -6,7 +6,6 @@ public class DetetorAberturaPortaEvent {
 
 	private final int tempoAberta;
 
-
 	public DetetorAberturaPortaEvent(int tempoAberta, LocalDateTime timestamp) {
 		super(TipoEvento.OPEN_DOOR, timestamp);
 		this.tempoAberta = tempoAberta;
