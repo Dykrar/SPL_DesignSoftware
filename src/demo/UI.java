@@ -10,8 +10,6 @@ public class UI {
 
 	public static void main(String[] args) { 
 		try {
-			
-			//turn off verbose
 			Logger cmRootLogger = Logger.getLogger("default.config");
 			cmRootLogger.setLevel(java.util.logging.Level.OFF);
 			String conFile = System.getProperty("java.util.logging.config.file");
@@ -19,7 +17,7 @@ public class UI {
 			      System.setProperty("java.util.logging.config.file", "ignoreAllSphinx4LoggingOutput");
 			}
 			  
-            Thread.sleep(350);
+            Thread.sleep(300);
             System.out.println("Bem vindo ao nosso projeto!");
             System.out.println("Pode agora escolher o producto a exprimentar para tal basta escrever o p + numero(EX: p3).");
             System.out.println("Os produtos sao:");
