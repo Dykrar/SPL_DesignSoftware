@@ -10,6 +10,5 @@ public abstract class RegistaDispositivo {
 	public RegistaDispositivo(TipoProduto tipoProduto) {
 		BezirkMiddleware.initialize();
         this.bezirk = BezirkMiddleware.registerZirk(tipoProduto.name());
-	}
-
+	}	
 }
