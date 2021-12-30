@@ -6,6 +6,7 @@ import com.bezirk.middleware.addressing.ZirkEndPoint;
 import handlers.alerts.AlertHandler;
 import i18n.I18N;
 import i18n.Messages;
+import handlers.devices.DeviceHandler;
 import zirk.eventos.CampainhaEvent;
 import zirk.eventos.DispositivoEvent;
 

@@ -8,10 +8,10 @@
 	<feature manual="selected" name="Portuguese"/>
 	<feature automatic="unselected" name="English"/>
 	<feature manual="selected" name="ClientApp"/>
-	<feature automatic="selected" name="Elders"/>
+	<feature automatic="selected" name="VisualEmpairment"/>
 	<feature automatic="unselected" name="WithoutVisualEmpairment"/>
 	<feature automatic="unselected" name="LightSinals"/>
-	<feature manual="selected" name="VisualEmpairment"/>
+	<feature automatic="selected" name="WithVisualEmpairment"/>
 	<feature automatic="selected" name="SynthesizedVoice"/>
 	<feature automatic="selected" name="SendInfo"/>
 	<feature manual="selected" name="SMS"/>
