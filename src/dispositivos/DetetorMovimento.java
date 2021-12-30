@@ -24,6 +24,6 @@ public class DetetorMovimento extends RegistaDispositivo {
                 System.err.println("Enviado evento de detecao de movimento");
             }
         };
-        new Timer().scheduleAtFixedRate(task, 0, 5000);
+        new Timer().scheduleAtFixedRate(task, 0, 8000);
 	}
 }

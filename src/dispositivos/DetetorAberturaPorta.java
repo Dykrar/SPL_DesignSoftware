@@ -24,6 +24,6 @@ public class DetetorAberturaPorta extends RegistaDispositivo {
                 System.err.println("Enviado evento de detecao de abertura de porta");
             }
         };
-        new Timer().scheduleAtFixedRate(task, 0, 5000);
+        new Timer().scheduleAtFixedRate(task, 0, 8000);
 	}
 }
