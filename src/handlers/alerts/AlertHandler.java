@@ -34,9 +34,9 @@ public class AlertHandler {
 			if (alert instanceof DetecaoMovimentoAlert) {
 				((DetecaoMovimentoAlert) alert).alert();
 			}
-			if (alert instanceof InatividadeAlert) { 
+			/*if (alert instanceof InatividadeAlert) { 
 				((InatividadeAlert) alert).cancel();
-			} //Classe InatividadeAlert foi eliminada
+			} *///Classe InatividadeAlert foi eliminada
 		}
 	}
 }
